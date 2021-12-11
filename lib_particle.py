@@ -28,13 +28,14 @@ class Particle:
 
 
 
+
 if __name__ == "__main__":
     coords = [0, 0, 0]
-    velocity = [100, 100, 0]
+    velocity = [200, 100, 0]
     particle = Particle(0.1, 0, coords, velocity)
     track_x = []
     track_y = []
-    force = [0, -10, 0]
+    force = [0, 10, 0]
     time = 0.1
     track_x.append(coords[0])
     track_y.append(coords[1])

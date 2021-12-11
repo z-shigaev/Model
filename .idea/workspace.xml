@@ -20,13 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c5b44e0-37b5-433b-b1ad-1478cbaa8776" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/electric_field.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib_force.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib_particle.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib_particle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" afterPath="$PROJECT_DIR$/main" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="lib_particle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Модель" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -67,8 +77,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Модель" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.lib_particle" />
       </list>
     </recent_temporary>
@@ -113,22 +145,38 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="579" y="187" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1639210544703" />
-    <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1639213928313">
+    <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1639223942420">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1639213928313" />
-    <state width="1431" height="224" key="GridCell.Tab.0.center" timestamp="1639213928313">
+    <state width="1431" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1639223942420" />
+    <state width="1431" height="224" key="GridCell.Tab.0.center" timestamp="1639223942420">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1639213928313" />
-    <state width="1431" height="224" key="GridCell.Tab.0.left" timestamp="1639213928313">
+    <state width="1431" height="224" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1639223942420" />
+    <state width="1431" height="224" key="GridCell.Tab.0.left" timestamp="1639223942420">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1639213928313" />
-    <state width="1431" height="224" key="GridCell.Tab.0.right" timestamp="1639213928313">
+    <state width="1431" height="224" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1639223942420" />
+    <state width="1431" height="224" key="GridCell.Tab.0.right" timestamp="1639223942420">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1639213928313" />
+    <state width="1431" height="224" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1639223942420" />
+    <state width="1431" height="277" key="GridCell.Tab.1.bottom" timestamp="1639218437741">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="277" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1639218437741" />
+    <state width="1431" height="277" key="GridCell.Tab.1.center" timestamp="1639218437741">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="277" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1639218437741" />
+    <state width="1431" height="277" key="GridCell.Tab.1.left" timestamp="1639218437741">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="277" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1639218437741" />
+    <state width="1431" height="277" key="GridCell.Tab.1.right" timestamp="1639218437741">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="277" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1639218437741" />
     <state x="308" y="77" key="SettingsEditor" timestamp="1639210571564">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
