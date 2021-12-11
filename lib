@@ -1,8 +1,0 @@
-class Particle:
-    def __init__(self):
-        weight = 0
-        charge = 0
-        coords = [0, 0, 0]
-        velocity = [0, 0, 0]
-
-    
