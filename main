@@ -2,36 +2,35 @@ import lib_force as lf
 import lib_particle as lb
 import electric_field as ef
 import matplotlib.pyplot as plt
+import math
 
 if __name__ == "__main__":
-    coord_1 = [1, 0, 0]
-    coord_2 = [1, 0, 0]
-    vel_1 = [100, 0, 0]
-    vel_2 = [100, 0, 0]
-    weight_1 = 9.1e-31
+    coord_1 = [0.005, 0, 0]
+    coord_2 = [0.005, 0, 0]
+    vel_1 = [0, 0, 0]
+    vel_2 = [0, 0, 0]
+    weight_1 = 9.1e-30
     weight_2 = 9.1e-31
-    charge_1 = 1.6e-19
-    charge_2 = 1.6e-19
+    charge_1 = -1.6e-19
+    charge_2 = -1.6e-19
     particle1 = lb.Particle(weight_1, charge_1, coord_1, vel_1)
     particle2 = lb.Particle(weight_2, charge_2, coord_2, vel_2)
-    AoFF = [0, -9.8, 0]
-    magnet = [0, 0, -8.75e-8]
+    AoFF = [0, 0, 0]
+    magnet = [0, 0, -0.1e-17]
     track_x1 = []
     track_y1 = []
     track_z1 = []
     track_x2 = []
     track_y2 = []
     track_z2 = []
-    time = 10e-9
-    coeff = 0.1
-    for i in range(0, 1000000):
+    time = 0.0000001e-9
+    k = 9e9
+    coeff = 0.139527*k
+    for i in range(0, 100000):
         electric1 = ef.get_field(particle1.coords, coeff)
         electric2 = ef.get_field(particle2.coords, coeff)
-        force1 = lf.force_gravity(AoFF, particle1.weight) + lf.force_electric(electric1, particle1.charge) + lf.force_magnet(magnet, particle1.velocity, particle1.charge)
-        force2 = lf.force_gravity(AoFF, particle2.weight) + lf.force_electric(electric2,
-                                                                              particle2.charge) + lf.force_magnet(
-            magnet, particle2.velocity, particle2.charge)
-
+        force1 = lf.force_electric(electric1, particle1.charge) + lf.force_magnet(magnet, particle1.velocity, particle1.charge)
+        force2 = lf.force_electric(electric2, particle2.charge) + lf.force_magnet(magnet, particle2.velocity, particle2.charge)
         x1, y1, z1 = particle1.change_moving(force1, time)
         x2, y2, z2 = particle2.change_moving(force2, time)
         # particle.get_status()
@@ -44,11 +43,29 @@ if __name__ == "__main__":
         if i % 100000 == 0:
             print(i)
         # particle.get_status()
+    x = []
+    y = []
+    x_2 = []
+    y_2 = []
+    R = 0.006
+    r = 0.0001
+    for ang in range(0, 360, 1):
+        x1 = R*math.cos(ang)
+        y1 = R*math.sin(ang)
+        x2 = r*math.cos(ang)
+        y2 = r*math.sin(ang)
+        x.append(x1)
+        y.append(y1)
+        x_2.append(x2)
+        y_2.append(y2)
     fig = plt.figure()
     ax = fig.add_subplot(111)
     ax.plot(track_x1, track_y1, label='parametric curve')
+    ax.set_title("Масса = 100m")
     plt.xlabel("Ось X")
     plt.ylabel("Ось Y")
+    plt.axis('equal')
     # plt.zlabel("Ось Z")
     # plt.plot(track_x, track_y, track_z)
+    # plt.savefig("image\image_100m.png")
     plt.show()
